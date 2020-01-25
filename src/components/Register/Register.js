@@ -22,7 +22,7 @@ onPasswordChange = (event) => {
 
 
 onSubmitSignIn = () => {
-  fetch('https://smart-brain8.herokuapp.com//register', {
+  fetch('https://calm-scrubland-39409.herokuapp.com//register', {
     method: 'post',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({

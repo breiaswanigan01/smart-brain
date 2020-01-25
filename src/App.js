@@ -82,7 +82,7 @@ this.setState({input: event.target.value});
 
 onButtonSubmit = () => {
  this.setState({imageUrl: this.state.input});
- fetch('https://smart-brain8.herokuapp.com//imageurl', {
+ fetch('https://calm-scrubland-39409.herokuapp.com//imageurl', {
   method: 'post',
 headers: {'Content-Type': 'application/json'},
 body: JSON.stringify({
@@ -92,7 +92,7 @@ input: this.state.input
   .then(response => response.json())
   .then(response => {
     if (response) {
-      fetch('https://smart-brain8.herokuapp.com//image', {
+      fetch('https://calm-scrubland-39409.herokuapp.com//image', {
         method: 'put',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
