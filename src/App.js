@@ -106,7 +106,6 @@ input: this.state.input
   })
 .catch(console.log)
     }
-    
     this.displayFaceBox(this.calculateFaceLocation(response))
   })
   .catch(err => console.log(err));
