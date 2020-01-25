@@ -17,7 +17,7 @@ class Signin extends React.Component {
   }
 
   onSubmitSignIn = () => {
-fetch('wss://localhost:3001/signin', {
+fetch('https://localhost:3001/signin', {
   method: 'post',
   headers: {'Content-Type': 'application/json'},
   body: JSON.stringify({
